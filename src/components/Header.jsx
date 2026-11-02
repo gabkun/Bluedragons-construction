@@ -4,19 +4,19 @@ import logo from "../assets/logo.png";
 const navItems = [
   {
     label: "About Us",
-    href: "/",
-  },
-  {
-    label: "Projects",
     href: "/about",
   },
   {
+    label: "Projects",
+    href: "/projects",
+  },
+  {
     label: "Our Team",
-    href: "/services",
+    href: "/team",
   },
   {
     label: "Services",
-    href: "/contact",
+    href: "/services",
   },
   {
     label: "Contact Us",

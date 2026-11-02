@@ -1,7 +1,7 @@
 import Container from "../components/Container";
 
 const stats = [
-  { value: "20+", label: "Years Experience" },
+  { value: "10", label: "Years of Experience" },
   { value: "100+", label: "Projects Completed" },
   { value: "500+", label: "Happy Clients" },
   { value: "4", label: "Finish Levels" },
@@ -82,16 +82,16 @@ export default function Home() {
               </p>
 
               <h1 className="max-w-4xl text-4xl font-extrabold uppercase leading-[0.98] tracking-[-0.045em] text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-[78px]">
-                We Build What
+                Building Futures
                 <br />
-                Others{" "}
-                <span className="text-amber-500">Imagine.</span>
+                <span className="text-amber-500">Designing Excellence.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-sm leading-6 text-white/90 sm:text-base sm:leading-7">
-                Blue Dragon Design &amp; Construction delivers thoughtfully
-                designed, high-quality spaces with disciplined construction
-                and dependable service.
+              Your trusted partner in design and
+              construction, delivering innovative solutions
+              precision, integrity, and craftsmanship since
+              founding
               </p>
 
               {/* Hero Buttons */}

@@ -1,0 +1,584 @@
+
+import Container from "../components/Container";
+
+/* =========================================
+   PAGE DATA
+========================================= */
+
+const values = [
+  {
+    number: "01",
+    title: "Innovation in Every Build",
+    description:
+      "We embrace innovative ideas, modern design approaches, and practical construction solutions to bring every vision to life.",
+  },
+  {
+    number: "02",
+    title: "Trusted Partnerships",
+    description:
+      "We build lasting relationships through transparent communication, collaboration, and a commitment to our clients.",
+  },
+  {
+    number: "03",
+    title: "Lasting Legacy",
+    description:
+      "We create meaningful spaces built with quality craftsmanship, integrity, and attention to every detail.",
+  },
+];
+
+const principles = [
+  "Client-First",
+  "Quality-Driven",
+  "Integrity Always",
+  "Built to Last",
+];
+
+const historyItems = [
+  {
+    number: "01",
+    label: "THE FOUNDATION",
+    title: "J&D Design + Build — Where It All Began",
+    description: (
+      <>
+        The company was initially established as{" "}
+        <strong>J&D Design+Build</strong> under the ownership of{" "}
+        <strong>Jimmy P. Famoso.</strong> From the very beginning,
+        Mr. Famoso laid a solid foundation rooted in hands-on
+        construction expertise, disciplined workmanship, and a
+        genuine commitment to client satisfaction — values that
+        would define the company's character for years to come.
+      </>
+    ),
+    color: "bg-[#04182D] text-amber-500",
+  },
+  {
+    number: "02",
+    label: "THE TRANSITION",
+    title: "BlueDragon Design & Construction — A New Chapter",
+    description: (
+      <>
+        As part of the company's growth and continued evolution,
+        the business was rebranded as{" "}
+        <strong>BlueDragon Design & Construction</strong>, with
+        ownership transitioning to{" "}
+        <strong>Jim Benjamin Abiezer Igot Famoso</strong>, the
+        eldest son of Jimmy P. Famoso. The renaming marked not a
+        departure from the past, but a confident step forward —
+        carrying the same values into a new era.
+      </>
+    ),
+    color: "bg-amber-500 text-[#04182D]",
+  },
+  {
+    number: "03",
+    label: "CONTINUITY & LEADERSHIP",
+    title: "A Family-Driven Leadership Team",
+    description: (
+      <>
+        While ownership has transitioned,{" "}
+        <strong>Jimmy P. Famoso</strong> remains integral to the
+        company as <strong>General Manager</strong>, overseeing
+        overall management and operations.{" "}
+        <strong>Jim Benjamin Abiezer Igot Famoso</strong> serves
+        as <strong>Operations Manager</strong>, supporting
+        day-to-day operations and guiding the company's continued
+        growth. Together, they ensure that BlueDragon's founding
+        principles — quality workmanship, innovative solutions,
+        and client-focused service — remain at the heart of every
+        project.
+      </>
+    ),
+    color: "bg-[#07164A] text-amber-500",
+  },
+];
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+export default function About() {
+  return (
+    <main className="min-h-screen bg-white font-sans">
+
+      {/* =========================================
+          HERO SECTION
+      ========================================== */}
+
+      <section className="relative flex min-h-[520px] overflow-hidden bg-[#031326] sm:min-h-[600px] lg:min-h-[calc(85vh-110px)] lg:items-center">
+
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/about.jpg')",
+          }}
+        />
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-[#031326]/75" />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#031326]/95 via-[#031326]/75 to-[#031326]/40" />
+
+        {/* Bottom Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#031326]/60 via-transparent to-[#031326]/20" />
+
+        <Container>
+          <div className="relative z-10 flex min-h-[520px] items-center py-24 sm:min-h-[600px] lg:min-h-[calc(85vh-110px)] lg:py-32">
+
+            <div className="max-w-3xl">
+
+              <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-500 sm:text-xs">
+                ABOUT US
+              </p>
+
+              <h1 className="text-4xl font-extrabold uppercase leading-[1.02] tracking-[-0.045em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                Building With
+                <br />
+                <span className="text-amber-500">
+                  Purpose & Passion.
+                </span>
+              </h1>
+
+              <p className="mt-7 max-w-xl text-sm leading-7 text-slate-200 sm:text-base sm:leading-8">
+                Discover the people, purpose, and principles behind
+                Blue Dragon Design and Construction. We turn ideas
+                into meaningful spaces built to inspire and endure.
+              </p>
+
+              <a
+                href="#who-we-are"
+                className="mt-8 inline-flex items-center gap-5 bg-amber-500 px-6 py-4 text-[10px] font-bold uppercase tracking-wider text-[#031326] transition-all duration-300 hover:bg-white"
+              >
+                Discover Our Story
+                <span className="text-base">↓</span>
+              </a>
+
+            </div>
+          </div>
+        </Container>
+      </section>
+
+
+      {/* =========================================
+          WHO WE ARE
+      ========================================== */}
+
+      <section
+        id="who-we-are"
+        className="bg-white py-20 sm:py-24 lg:py-28"
+      >
+        <Container>
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+
+            {/* Content */}
+            <div>
+              <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-600 sm:text-xs">
+                WHO WE ARE
+              </p>
+
+              <h2 className="font-serif text-4xl font-bold leading-tight tracking-tight text-[#17263C] sm:text-5xl lg:text-6xl">
+                Building More
+                <br />
+                Than Structures.
+              </h2>
+
+              <div className="mt-7 space-y-5 text-sm leading-8 text-slate-600 sm:text-base">
+                <p>
+                  BlueDragon Design & Construction is built on a
+                  foundation of craftsmanship, dedication, and
+                  the belief that every structure should have a
+                  purpose.
+                </p>
+
+                <p>
+                  We bring together thoughtful design, practical
+                  construction solutions, and a commitment to
+                  quality to create spaces that reflect the
+                  vision and needs of our clients.
+                </p>
+
+                <p>
+                  From the initial concept to the final details,
+                  we approach every project with professionalism,
+                  collaboration, and a passion for building
+                  something meaningful.
+                </p>
+              </div>
+
+              {/* Principles */}
+              <div className="mt-9 flex flex-wrap gap-3">
+                {principles.map((principle) => (
+                  <span
+                    key={principle}
+                    className="border border-slate-200 px-4 py-2 text-[10px] font-bold uppercase tracking-wider text-[#17263C] transition-colors hover:border-amber-500 hover:bg-amber-500 hover:text-[#031326]"
+                  >
+                    {principle}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Image */}
+            <div className="relative">
+              <div className="absolute -bottom-5 -left-5 hidden h-full w-full border-2 border-amber-500 lg:block" />
+
+              <div className="relative aspect-[4/3] overflow-hidden bg-slate-200">
+                <img
+                  src="/images/projects/featured-residence.jpg"
+                  alt="Blue Dragon architectural and construction work"
+                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+
+              <div className="absolute bottom-0 left-0 bg-[#031326] px-7 py-5 sm:px-10">
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-amber-500">
+                  BLUE DRAGON
+                </p>
+                <p className="mt-1 text-sm font-semibold text-white">
+                  Design & Construction
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </Container>
+      </section>
+
+
+      {/* =========================================
+          OUR JOURNEY / COMPANY HISTORY
+      ========================================== */}
+
+      <section className="bg-[#F7F3EB] py-20 sm:py-24 lg:py-28">
+        <Container>
+
+          <div className="mb-16 max-w-3xl">
+            <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-600 sm:text-xs">
+              OUR JOURNEY
+            </p>
+
+            <h2 className="font-serif text-4xl font-bold leading-tight text-[#17263C] sm:text-5xl lg:text-6xl">
+              A Legacy Built on
+              <br />
+              <span className="text-amber-600">
+                Family & Purpose.
+              </span>
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-sm leading-8 text-slate-600 sm:text-base">
+              Every great company has a story. Ours is shaped by
+              family, experience, and a shared commitment to
+              creating quality spaces and lasting relationships.
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+
+            {/* Timeline Line */}
+            <div className="absolute bottom-0 left-[19px] top-0 hidden w-px bg-amber-500/40 md:block" />
+
+            <div className="space-y-8">
+              {historyItems.map((item) => (
+                <div
+                  key={item.number}
+                  className="relative grid gap-6 md:grid-cols-[40px_1fr] md:gap-10"
+                >
+
+                  {/* Number */}
+                  <div className="relative z-10 hidden h-10 w-10 items-center justify-center rounded-full border-4 border-[#F7F3EB] bg-amber-500 text-xs font-extrabold text-[#031326] md:flex">
+                    {item.number}
+                  </div>
+
+                  {/* Card */}
+                  <div className="overflow-hidden border border-slate-200/70 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                    <div className="grid lg:grid-cols-[220px_1fr]">
+
+                      {/* Colored Label */}
+                      <div
+                        className={`flex min-h-[150px] flex-col justify-between p-7 ${item.color}`}
+                      >
+                        <span className="text-[10px] font-bold tracking-[0.3em]">
+                          {item.number}
+                        </span>
+
+                        <p className="max-w-[150px] text-xs font-extrabold uppercase leading-6 tracking-[0.15em]">
+                          {item.label}
+                        </p>
+                      </div>
+
+                      {/* Description */}
+                      <div className="p-7 sm:p-9 lg:p-10">
+
+                        <h3 className="font-serif text-2xl font-bold leading-snug text-[#17263C] sm:text-3xl">
+                          {item.title}
+                        </h3>
+
+                        <p className="mt-5 text-sm leading-8 text-slate-600 sm:text-base">
+                          {item.description}
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+          {/* Bottom Branding */}
+          <div className="mt-16 flex flex-col items-center justify-center gap-5 border-t border-slate-300/70 pt-12 text-center sm:flex-row sm:text-left">
+
+            <img
+              src="/assets/logo.png"
+              alt="Blue Dragon Logo"
+              className="h-16 w-auto object-contain"
+            />
+
+            <div>
+              <p className="text-sm font-extrabold uppercase tracking-[0.2em] text-[#17263C]">
+                BlueDragon Design & Construction
+              </p>
+
+              <p className="mt-1 text-xs tracking-wide text-slate-500">
+                Continuing a legacy. Building the future.
+              </p>
+            </div>
+
+          </div>
+
+        </Container>
+      </section>
+
+
+      {/* =========================================
+          MISSION & VISION
+      ========================================== */}
+
+      <section className="bg-[#031326] py-20 sm:py-24 lg:py-28">
+        <Container>
+
+          <div className="mb-16 max-w-3xl">
+            <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-500 sm:text-xs">
+              WHAT DRIVES US
+            </p>
+
+            <h2 className="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+              Our Purpose.
+              <br />
+              <span className="text-amber-500">
+                Our Direction.
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+
+            {/* Mission */}
+            <div className="group border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 hover:border-amber-500 sm:p-10 lg:p-12">
+
+              <div className="mb-8 flex h-14 w-14 items-center justify-center bg-amber-500 text-[#031326]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.8}
+                  stroke="currentColor"
+                  className="h-7 w-7"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v2m7.07.93-1.42 1.42M21 12h-2M5 12H3m3.35-5.65L4.93 4.93M12 8a4 4 0 100 8 4 4 0 000-8z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 16v5m-3-2h6"
+                  />
+                </svg>
+              </div>
+
+              <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.3em] text-amber-500">
+                OUR MISSION
+              </p>
+
+              <h3 className="font-serif text-3xl font-bold text-white sm:text-4xl">
+                Turning Visions Into Reality.
+              </h3>
+
+              <p className="mt-6 text-sm leading-8 text-slate-300 sm:text-base">
+                To deliver quality design and construction
+                solutions through innovation, skilled
+                craftsmanship, and client-focused service.
+                We aim to build spaces that meet practical
+                needs while creating lasting value for
+                the people who use them.
+              </p>
+
+            </div>
+
+            {/* Vision */}
+            <div className="group border border-white/10 bg-white/[0.04] p-8 transition-all duration-300 hover:border-amber-500 sm:p-10 lg:p-12">
+
+              <div className="mb-8 flex h-14 w-14 items-center justify-center bg-amber-500 text-[#031326]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.8}
+                  stroke="currentColor"
+                  className="h-7 w-7"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+
+              <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.3em] text-amber-500">
+                OUR VISION
+              </p>
+
+              <h3 className="font-serif text-3xl font-bold text-white sm:text-4xl">
+                Building a Better Tomorrow.
+              </h3>
+
+              <p className="mt-6 text-sm leading-8 text-slate-300 sm:text-base">
+                To become a trusted name in the design and
+                construction industry, recognized for
+                excellence, integrity, and meaningful
+                contributions to the communities we serve.
+              </p>
+
+            </div>
+
+          </div>
+        </Container>
+      </section>
+
+
+      {/* =========================================
+          CORE VALUES
+      ========================================== */}
+
+      <section className="bg-white py-20 sm:py-24 lg:py-28">
+        <Container>
+
+          <div className="mb-14 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+
+            <div>
+              <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-600 sm:text-xs">
+                WHAT WE BELIEVE IN
+              </p>
+
+              <h2 className="font-serif text-4xl font-bold leading-tight text-[#17263C] sm:text-5xl lg:text-6xl">
+                Our Core Values.
+              </h2>
+            </div>
+
+            <p className="max-w-md text-sm leading-8 text-slate-600 sm:text-base">
+              Our values guide every decision, every partnership,
+              and every project we undertake.
+            </p>
+
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+
+            {values.map((value) => (
+              <div
+                key={value.number}
+                className="group relative overflow-hidden border border-slate-200 bg-white p-8 transition-all duration-500 hover:-translate-y-2 hover:border-amber-500 hover:shadow-xl sm:p-10"
+              >
+
+                <div className="flex items-center justify-between">
+
+                  <span className="font-serif text-5xl font-bold text-slate-100 transition-colors duration-300 group-hover:text-amber-500/20">
+                    {value.number}
+                  </span>
+
+                  <span className="h-10 w-10 border border-amber-500 transition-all duration-300 group-hover:rotate-45 group-hover:bg-amber-500" />
+
+                </div>
+
+                <div className="mt-10">
+
+                  <div className="mb-5 h-1 w-12 bg-amber-500 transition-all duration-300 group-hover:w-20" />
+
+                  <h3 className="font-serif text-2xl font-bold leading-snug text-[#17263C]">
+                    {value.title}
+                  </h3>
+
+                  <p className="mt-5 text-sm leading-8 text-slate-600">
+                    {value.description}
+                  </p>
+
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
+        </Container>
+      </section>
+
+
+      {/* =========================================
+          CALL TO ACTION
+      ========================================== */}
+
+      <section className="relative overflow-hidden bg-[#031326] py-20 sm:py-24 lg:py-28">
+
+        {/* Decorative Background */}
+        <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full border border-amber-500/10" />
+        <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full border border-amber-500/10" />
+
+        <Container>
+          <div className="relative z-10 flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
+
+            <div className="max-w-2xl">
+
+              <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.35em] text-amber-500 sm:text-xs">
+                LET'S BUILD SOMETHING GREAT
+              </p>
+
+              <h2 className="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+                Have a Vision?
+                <br />
+                <span className="text-amber-500">
+                  Let's Build It Together.
+                </span>
+              </h2>
+
+              <p className="mt-6 max-w-xl text-sm leading-8 text-slate-300 sm:text-base">
+                Every great project begins with an idea.
+                Let BlueDragon Design & Construction help
+                bring yours to life.
+              </p>
+
+            </div>
+
+            <a
+              href="/contact"
+              className="inline-flex shrink-0 items-center gap-6 bg-amber-500 px-8 py-5 text-[10px] font-extrabold uppercase tracking-[0.15em] text-[#031326] transition-all duration-300 hover:bg-white"
+            >
+              Start Your Project
+              <span className="text-lg">→</span>
+            </a>
+
+          </div>
+        </Container>
+      </section>
+
+    </main>
+  );
+}
