@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-gray-50">
@@ -5,13 +7,26 @@ export default function Footer() {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           {/* Logo */}
           <div>
-            <div className="text-lg font-bold text-gray-900">
-              YourLogo
+            <div className="text-lg font-bold text-gray-900">            
+              <img
+                src={logo}
+                alt="Blue Dragon logo"
+                className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
+              />
             </div>
+            
+                      <span className="flex flex-col leading-none">
+            <span className="text-[15px] font-bold uppercase tracking-[0.15em] text-blue sm:text-[17px]">
+              Blue Dragon
+            </span>
+
+            <span className="mt-[6px] whitespace-nowrap text-[8px] font-semibold uppercase tracking-[0.22em] text-blue/85">
+              Design &amp; Construction
+            </span>
+          </span>
 
             <p className="mt-2 max-w-sm text-sm leading-6 text-gray-500">
-              A short description about your company or organization goes
-              here.
+              Building a Stronger Tomorrow Building Futures Designing Excellence.
             </p>
           </div>
 
@@ -35,21 +50,28 @@ export default function Footer() {
               href="/services"
               className="text-sm text-gray-500 transition hover:text-gray-900"
             >
-              Services
+              Projects
             </a>
 
             <a
               href="/contact"
               className="text-sm text-gray-500 transition hover:text-gray-900"
             >
-              Contact
+              Services
+            </a>
+                        <a
+              href="/contact"
+              className="text-sm text-gray-500 transition hover:text-gray-900"
+            >
+              Contact Us
+
             </a>
           </div>
         </div>
 
         <div className="mt-8 border-t border-gray-200 pt-6">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Your Company. All rights reserved.
+            © {new Date().getFullYear()} Blue Dragon Design & Construction. All rights reserved.
           </p>
         </div>
       </div>

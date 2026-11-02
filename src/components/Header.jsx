@@ -78,7 +78,7 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <a
-            href="/contact"
+            href="/buildnow"
             className="ml-1 inline-flex min-h-[44px] items-center justify-center gap-3 bg-amber-500 px-6 text-[10px] font-bold uppercase tracking-[0.06em] text-slate-950 transition-all duration-300 hover:bg-amber-400"
           >
             Build Now Pay Later
